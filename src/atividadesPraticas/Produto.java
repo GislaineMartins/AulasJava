@@ -18,7 +18,7 @@ public class Produto {
         System.out.println("Digite a categoria do produto: ");
         String  categoria = sc.next();
 
-        System.out.printf("ola %s seja bem vindo(a)",nome);
+        System.out.printf("produto %s",nome);
 
         System.out.println("Cadastro realizado com sucesso");
 
