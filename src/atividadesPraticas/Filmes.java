@@ -25,8 +25,6 @@ public class Filmes {
                 String generoFilme = sc.nextLine();
                 System.out.println("Digite ano de lançamento: ");
                 int anoFilme = sc.nextInt();
-
-
                 break;
             case 2:
                 System.out.println("-----Cadastro de series-----");
@@ -36,7 +34,7 @@ public class Filmes {
                 int anoSerie = sc.nextInt();
                 System.out.println("Digite nome da produtora: ");
                 String produtoraSerie = sc.nextLine();
-
+                sc.nextLine();
                 break;
             case 3:
                 System.out.println("-----Cadastro de documentarios-----");
@@ -46,6 +44,7 @@ public class Filmes {
                 int anoDocumentario = sc.nextInt();
                 System.out.println("Digite o tema: ");
                 String temaDocumentario = sc.nextLine();
+                sc.nextLine();
 
                 break;
             case 0:
