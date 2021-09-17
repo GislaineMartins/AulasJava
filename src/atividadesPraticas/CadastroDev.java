@@ -2,6 +2,7 @@ package atividadesPraticas;
 
 import java.util.Scanner;
 
+
 public class CadastroDev {
     public static void main(String[] args) {
 
