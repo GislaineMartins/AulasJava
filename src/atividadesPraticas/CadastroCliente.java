@@ -12,58 +12,83 @@ public class CadastroCliente {
         System.out.println("1- Cadastro de clientes");
         System.out.println("2- Listar clientes");
         System.out.println("0- Sair");
+        System.out.print("Digite a opção desejada: ");
         int opcao = sc.nextInt();
         sc.nextLine();
 
        switch (opcao){
+
            case 1:
+               String nome = "";
+               String sobrenome = "";
+               String rg = "";
+               String cpf = "";
+
                System.out.println("cadastre o cliente");
                boolean invalido = true;
                do{
                    System.out.println("Digite o nome do cliente: ");
-                   String nome = sc.nextLine();
-                   System.out.println("Digite o sobrenome do cliente: ");
-                   String sobrenome = sc.nextLine();
+                   nome = sc.nextLine();
 
-                   if( nome.length() <= 3 && sobrenome.length() <= 3){
-                       System.out.println("O nome deve e sobrenome deve conter 3 caracteres");
-                       System.out.println("Digite o nome do cliente novamente: ");
-                       nome = sc.nextLine();
-                       System.out.println("Digite o sobrenome do cliente novamente: ");
-                       sobrenome = sc.nextLine();
-                   }
-                   else{
+                   if( nome.length() < 3){
+                       System.out.println("O nome deve conter 3 caracteres");
 
+                   }else{
                        invalido = false;
                    }
                }while(invalido);
 
-                boolean invalido2 = true;
+               invalido = true;
 
                do{
-                   System.out.println("Digite o RG: ");
-                   String rg = sc.nextLine();
-                   System.out.println("Digite o CPF: ");
-                   String cpf = sc.nextLine();
+                   System.out.println("Digite o sobrenome do cliente: ");
+                   sobrenome = sc.nextLine();
 
-                   if( rg.length() > 4 && cpf.length() > 11){
-                       System.out.println("O rg deve ter no minimo 4 caracteres e cpf no minimo 11");
-                       System.out.println("Digite o RG novamente: ");
-                       rg = sc.nextLine();
-                       System.out.println("Digite o CPF novamente: ");
-                       cpf = sc.nextLine();
-                   }
-                   else{
+                   if( sobrenome.length() < 3){
+                       System.out.println("O sobrenome deve conter 3 caracteres");
 
-                       invalido2 = false;
+                   }else{
+                       invalido = false;
                    }
-               }while(invalido2);
+               }while(invalido);
+
+               invalido = true;
+
+               do{
+                   System.out.println("Digite o RG do cliente: ");
+                   rg = sc.nextLine();
+
+                   if( rg.length() < 4){
+                       System.out.println("O RG deve conter no minimo 4 caracteres");
+
+                   }else{
+                       invalido = false;
+                   }
+               }while(invalido);
+
+               invalido = true;
+
+               do{
+                   System.out.println("Digite o CPF do cliente: ");
+                   cpf = sc.nextLine();
+
+                   if( cpf.length() < 11){
+                       System.out.println("O CPF deve conter no minimo 11 caracteres");
+
+                   }else{
+                       invalido = false;
+                   }
+               }while(invalido);
+               System.out.println("CADASTRO REALIZADO COM SUCESSO");
+               System.out.printf("NOME: %s,\n SOBRENOME: %s,\n RG: %s,\n CPF: %s\n ",nome, sobrenome, rg,cpf);
+
 
                break;
            case 2:
-               System.out.println("Saindo do sistema");
+               System.out.println("Listar clientes");
                break;
            case 0:
+               System.out.println("Saindo do sistema");
                break;
            default:
                System.out.println("Opção invalida");
