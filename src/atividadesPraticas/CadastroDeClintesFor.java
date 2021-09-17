@@ -17,6 +17,7 @@ public class CadastroDeClintesFor {
             qtd++;
         }
 
+        //Verificando a quantidade de clientes
         System.out.println(qtd);
     }
 }
