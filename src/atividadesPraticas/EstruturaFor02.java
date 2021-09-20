@@ -13,17 +13,19 @@ public class EstruturaFor02 {
             
         }
 
-        System.out.println("Numeros primos");
-        for (int i=1 ; i<=num ; i++) {
-            if(num % i == 0){
-                div++;
+        System.out.println("--------------Numeros primos---------------");
+        for (int i = 0; i <num ; i++) {
+            String primo = "numero primo";
+            for (int j = 2; j <i ; j++) {
+                if(i % j == 0){
+                     primo = "nao primo";
+                }
+            }
+            if(primo == "numero primo"){
+                System.out.println(i + " " +primo);
 
             }
-            if(div == 2){
-                System.out.println(i+" é primo");
-            }else{
-                System.out.println(i+" não é primo");
-            }
+            
         }
 
         }

@@ -14,8 +14,6 @@ public class EstruturaFor03 {
 
       double M =0, total =0;
 
-     // M = (5000 + (5000/ 100)*2);
-
         for (int i = 0; i <24 ; i++) {
             M = (total + (inicial/ 100)*2);
             total = M + inicial;
