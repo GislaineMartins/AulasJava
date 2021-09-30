@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         CalculadoraTexas c = new CalculadoraTexas();
-        double v = c.taxaTransacaoBancaria(50);
-        System.out.println(v);
+        double v = c.taxaTransacaoBancaria(100);
+        System.out.println("Taxa transação: "+v);
         double contagem1 = c.taxaDeSaque(100);
         System.out.println("valor: "+contagem1);
         double contagem2 = c.taxaDeSaque(100);
