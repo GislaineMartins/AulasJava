@@ -1,6 +1,6 @@
 package atividadesPraticas.atv16;
 
-public class CalculadoraTaxas {
+public class CalculadoraTexas {
 
     private double valor;
     private int cont;

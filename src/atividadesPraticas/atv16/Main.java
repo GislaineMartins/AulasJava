@@ -3,7 +3,7 @@ package atividadesPraticas.atv16;
 public class Main {
     public static void main(String[] args) {
 
-        CalculadoraTaxas c = new CalculadoraTaxas();
+        CalculadoraTexas c = new CalculadoraTexas();
         double v = c.taxaTransacaoBancaria(50);
         System.out.println(v);
         double contagem1 = c.taxaDeSaque(100);
