@@ -16,6 +16,25 @@ public class Main {
         System.out.println("valor: "+contagem4);
         double contagem5 = c.taxaDeSaque(100);
         System.out.println("valor: "+contagem5);
+        double contagem6 = c.taxaDeSaque(100);
+        System.out.println("valor: "+contagem6);
+        double contagem7 = c.taxaDeSaque(100);
+        System.out.println("valor: "+contagem7);
+        double contagem8 = c.taxaDeSaque(100);
+        System.out.println("valor: "+contagem8);
+        double contagem9 = c.taxaDeSaque(100);
+        System.out.println("valor: "+contagem9);
+        double contagem10 = c.taxaDeSaque(100);
+        System.out.println("valor: "+contagem10);
+
+
+
+
+
+
+
+
+
 
 
 

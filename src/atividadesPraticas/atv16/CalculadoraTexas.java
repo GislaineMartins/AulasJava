@@ -14,7 +14,7 @@ public class CalculadoraTexas {
 
     public double taxaDeSaque(double valor){
         cont++;
-        if(cont == 5){
+        if(cont % 5 == 0){
             valor = valor - 1.30;
             return valor;
         }else{
@@ -22,5 +22,7 @@ public class CalculadoraTexas {
         }
 
     }
+
+
 
 }
