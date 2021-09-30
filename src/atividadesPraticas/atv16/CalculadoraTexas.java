@@ -18,7 +18,7 @@ public class CalculadoraTexas {
             valor = valor - 1.30;
             return valor;
         }else{
-            return cont;
+            return valor;
         }
 
     }
