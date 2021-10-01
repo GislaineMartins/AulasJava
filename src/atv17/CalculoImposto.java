@@ -2,7 +2,12 @@ package atv17;
 
 public class CalculoImposto {
 
-    public void calculoISS(){
+    private double impostoISS = 0.04;
+    private double valor;
+
+    public double calculoISS(double valor){
+        double resultado = valor * impostoISS;
+        return resultado;
 
     }
 
