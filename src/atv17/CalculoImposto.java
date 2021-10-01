@@ -20,7 +20,25 @@ public class CalculoImposto {
 
     }
 
-    public void calculoIR(){
+    public double calculoIR(double valor){
+
+        if(valor < 1985.97){
+            return 0;
+        }else if(valor > 1985.97 && valor < 2948.37){
+            double resultado = valor * 0.075; // 7.5%
+            return resultado;
+        }else if(valor > 2948.37 && valor > 3912.58){
+            double resultado = valor * 0.15; // 15%
+            return resultado;
+        }else if(valor > 3912.58 && valor < 4865.55){
+            double resultado = valor * 0.225; // 22.5%
+            return resultado;
+        }else if(valor > 4865.55 &&  valor > 39293.00){
+            double resultado = valor * 0.275; // 27.5%
+            return resultado;
+        }
+        double resultado = valor * 0.3; // 30%
+        return resultado;
 
     }
 
