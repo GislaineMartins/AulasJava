@@ -5,7 +5,7 @@ public class Produto {
     private int codigo;
     private String nome;
     private String descricao;
-    private float valor;
+    private double valor;
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
@@ -31,11 +31,11 @@ public class Produto {
         return this.descricao;
     }
 
-    public void setValor(float valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 
-    public float getValor() {
+    public double getValor() {
         return this.valor;
     }
 

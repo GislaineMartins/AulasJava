@@ -7,12 +7,12 @@ public class PrincipalLoja {
         produto.setCodigo(1);
         produto.setNome("TV");
         produto.setDescricao("Smart TV LED 55'' ");
-        produto.setValor(1500.00f);
+        produto.setValor(1500.00);
 
         int codigo = produto.getCodigo();
         String nome = produto.getNome();
         String descricao = produto.getDescricao();
-        float valor = produto.getValor();
+        double valor = produto.getValor();
 
         System.out.println("Codigo: "+ codigo);
         System.out.println("Nome: "+ nome);
