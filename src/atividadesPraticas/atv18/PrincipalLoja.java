@@ -14,6 +14,7 @@ public class PrincipalLoja {
         String descricao = produto.getDescricao();
         double valor = produto.getValor();
 
+        System.out.println("+++++++++++++++++++DESCRIÇÃO++++++++++++++++++++");
         System.out.println("Codigo: "+ codigo);
         System.out.println("Nome: "+ nome);
         System.out.println("Descrição: "+ descricao);

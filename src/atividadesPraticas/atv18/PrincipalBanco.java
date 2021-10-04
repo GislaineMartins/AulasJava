@@ -15,6 +15,7 @@ public class PrincipalBanco {
         int codigoDoCliente = cc.getCodigoDoCliente();
         float saldo = cc.getSaldo();
 
+        System.out.println("+++++++++++++++++++DESCRIÇÃO++++++++++++++++++++");
         System.out.println("Agencia: "+agencia);
         System.out.println("Numero: "+numero);
         System.out.println("Código do cliente: "+codigoDoCliente);
