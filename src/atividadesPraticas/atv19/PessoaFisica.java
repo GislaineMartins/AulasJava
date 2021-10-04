@@ -1,19 +1,19 @@
 package atividadesPraticas.atv19;
 
-public class PessoaFísica {
-    private int código;
+public class PessoaFisica {
+    private int codigo;
     private String nome;
     private String sobrenome;
     private int idade;
     private String rg;
     private String cpf;
 
-    public int getCódigo() {
-        return código;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setCódigo(int código) {
-        this.código = código;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getNome() {
