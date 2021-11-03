@@ -1,6 +1,10 @@
-package aula14.P1;
+package modulo1.aula14.P1;
 
-public class Carro extends Veiculo{
+import modulo1.aula14.P1.Veiculo;
+
+;
+
+public class Carro extends Veiculo {
     public int portas;
     public boolean ar_condicionado;
     

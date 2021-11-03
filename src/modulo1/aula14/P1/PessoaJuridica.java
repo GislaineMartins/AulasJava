@@ -1,6 +1,8 @@
-package aula14.P1;
+package modulo1.aula14.P1;
 
-public class PessoaJuridica extends Pessoa{
+import modulo1.aula14.P1.Pessoa;
+
+public class PessoaJuridica extends Pessoa {
 
     private String nome_fantasia;    
     private String ie;
